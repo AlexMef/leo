@@ -1,0 +1,42 @@
+.TabMenu {
+  margin: 0;
+  padding: 0;
+
+
+  .TabMenu-navigation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+
+  .Content-tabs-tabcontent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 50px 0;
+    border-style: solid;
+    border-color: #dadada;
+    border-width: 1px;
+    width: 100%;
+
+
+    .Content-tabs-tabcontent-logo {
+      width: 75%;
+      align-self: center;
+    }
+
+    .Content-tabs-tabcontent-title {
+      padding: 0 50px;
+      font-size: 36px;
+    }
+
+    .Content-tabs-tabcontent-text {
+      padding: 0 50px;
+    }
+  }
+
+
+}

@@ -1,0 +1,27 @@
+.tab-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: stretch;
+  //height: 100%;
+  padding: 50px;
+  //border: none;
+  //outline: #e67624;
+  //background-color: red; // debug
+
+
+  img {
+    padding-bottom: 25px;
+  }
+
+  h2, h3 {
+    padding: 0;
+    margin: 0;
+    font-size: 27px;
+    font-weight: 300;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+}

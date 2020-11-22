@@ -8,7 +8,6 @@ function App(props) {
     return (
         <div className="App-wrapper">
         <div className="App">
-
                     <Header />
                     <Content/>
                     <Footer/>
