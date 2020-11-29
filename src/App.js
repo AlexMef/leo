@@ -4,15 +4,19 @@ import './App.scss';
 import Content from './components/Content';
 import Footer from './components/Footer';
 import Header from "./components/Header";
+import {BrowserRouter} from "react-router-dom";
+
 function App(props) {
     return (
-        <div className="App-wrapper">
-        <div className="App">
-                    <Header />
+        <BrowserRouter>
+            <div className="App-wrapper">
+                <div className="App">
+                    <Header/>
                     <Content/>
                     <Footer/>
+                </div>
             </div>
-        </div>
+        </BrowserRouter>
     );
 }
 

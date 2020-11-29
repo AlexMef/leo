@@ -1,0 +1,52 @@
+.React-slider-item-wrapper {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  .React-slider-item-leftbar {
+    display: flex;
+    flex-direction: column;
+
+    .React-slider-item-leftbar-img {
+      height: auto;
+      width: auto;
+    }
+
+  }
+
+  .React-slider-item-rightbar {
+    padding-left: 25px;
+    line-height: 1.2;
+    //width: 40%;
+
+    .React-slider-item-rightbar-title {
+      font-size: 32px;
+      font-weight: 600;
+    }
+
+    .React-slider-item-rightbar-description {
+      font-size: 22px;
+    }
+
+    .React-slider-item-rightbar-button {
+      background-color: #496e75;
+      margin-top: 15px;
+      padding: 5px 15px;
+      color: white;
+      border: none;
+      outline: none;
+
+      &:active {
+        background-color: #12b367;
+      }
+
+      &:hover {
+        color: gold;
+      }
+
+    }
+
+  }
+}

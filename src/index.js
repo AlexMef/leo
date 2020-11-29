@@ -9,7 +9,7 @@ import state from './redux/state';
 function renderAll() {
     ReactDOM.render(
         <React.StrictMode>
-            <App state={state} onButtonPressed={onButtonPressed} onTextAreaChange={onTextAreaChange}/>
+            <App/>
         </React.StrictMode>,
         document.getElementById('root')
     );

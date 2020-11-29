@@ -2,7 +2,7 @@ import React from 'react';
 import './Slider.scss';
 import slider_icon from "../img/slider_icon.svg";
 
-function Slider() {
+function ReactSlider() {
     return (
         <div className="Slider">
             <button className="Slider-button-previous"/>

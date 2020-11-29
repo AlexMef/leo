@@ -20,6 +20,12 @@
 
     .Navbar-menu-item {
       padding: 0 15px;
+      color: #fff;
+      text-decoration: none;
+
+      &:hover {
+        color: gold;
+      }
     }
   }
 }

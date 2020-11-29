@@ -4,10 +4,18 @@
   align-items: center;
   align-self: stretch;
   //height: 100%;
-  padding: 50px;
+  padding: 25px;
   //border: none;
-  //outline: #e67624;
-  //background-color: red; // debug
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background-color: transparent;
+  outline: none;
+
+  &:focus {
+    border-left: 1px solid #dadada;
+    border-right: 1px solid #dadada;
+    border-top: 1px solid #dadada;
+  }
 
 
   img {

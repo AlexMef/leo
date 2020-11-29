@@ -1,0 +1,21 @@
+.Tab-content-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .Tab-content-item-logo {
+    width: 75%;
+    align-self: center;
+  }
+
+  .Tab-content-item-title {
+
+    padding: 0 50px;
+    font-size: 36px;
+  }
+
+  .Tab-content-item-text {
+    padding: 0 50px;
+  }
+}

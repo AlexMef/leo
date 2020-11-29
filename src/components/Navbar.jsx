@@ -1,4 +1,5 @@
 import React from 'react';
+import {NavLink} from 'react-router-dom'
 import './Navbar.scss';
 
 function Navbar(props) {
@@ -6,10 +7,10 @@ function Navbar(props) {
             <nav className="Navbar">
                 <div className="Navbar-sitetitle">Leo -/</div>
                 <div className="Navbar-menu">
-                    <div className="Navbar-menu-item">Solutions</div>
-                    <div className="Navbar-menu-item">Products</div>
-                    <div className="Navbar-menu-item">Portfolio</div>
-                    <div className="Navbar-menu-item">Contacts</div>
+                    <NavLink to="/solutions" className="Navbar-menu-item">Solutions</NavLink>
+                    <NavLink to="/products" className="Navbar-menu-item">Products</NavLink>
+                    <NavLink to="/portfolio" className="Navbar-menu-item">Portfolio</NavLink>
+                    <NavLink to="/contacts" className="Navbar-menu-item">Contacts</NavLink>
                 </div>
             </nav>
     )
