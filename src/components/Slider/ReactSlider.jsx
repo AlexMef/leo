@@ -23,32 +23,20 @@ class ReactSlider extends React.Component {
 
     onSelectNext = () => {
         // be careful
-        if (this.state.activeStates.indexOf(true) !== this.maxActiveState) {
-            let copy = new Array(this.state.activeStates.length);
-            copy.fill(false, 0);
-            let newPosition = this.indexOfActive += 1;
-            copy[newPosition] = true;
-
-            this.setState({
-                    activeStates: copy,
-                }
-            )
+        if (this.state.activeStates.indexOf(true) < this.maxActiveState) {
+            let arrayCopy = new Array(this.state.activeStates.length);
+            arrayCopy.fill(false, 0);
+            arrayCopy[this.indexOfActive += 1] = true;
+            this.setState({activeStates: arrayCopy})
         }
-
-
     }
 
     onSelectPrevious = () => {
         if (this.state.activeStates.indexOf(true) !== this.minActiveState) {
-            let copy = new Array(this.state.activeStates.length);
-            copy.fill(false, 0);
-            let newPosition = this.indexOfActive -= 1;
-            copy[newPosition] = true;
-            this.setState({
-                activeStates: copy,
-            })
-
-
+            let arrayCopy = new Array(this.state.activeStates.length);
+            arrayCopy.fill(false, 0);
+            arrayCopy[this.indexOfActive -= 1] = true;
+            this.setState({activeStates: arrayCopy})
         }
     }
 
@@ -70,9 +58,7 @@ class ReactSlider extends React.Component {
                         onClick={this.onSelectPrevious}>
                     <img className=" React-slider-button-previous-logo" src={ReactSliderIcon} alt="prev"/>
                 </button>
-                <div className="React-slider-content"
-                     ref={this.sliderContentRef}>
-                    {this.props.children[this.indexOfActive]}</div>
+                <div className="React-slider-content"> {this.props.children[this.indexOfActive]} </div>
                 <button className="React-slider-button React-slider-button-next"
                         onClick={this.onSelectNext}>
                     <img className="React-slider-button-next-logo" src={ReactSliderIcon} alt="prev"/>

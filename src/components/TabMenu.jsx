@@ -16,19 +16,17 @@ class TabMenu extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            responsive: <ResponsiveTabContent/>,
-            ecommerce: <EcommerceTabContent/>,
-            dailyblog: <DailyBlogTabContent/>,
-            searchbased: <SearchBasedTabContent/>,
+            tabs: {
+                responsive: <ResponsiveTabContent/>,
+                ecommerce: <EcommerceTabContent/>,
+                dailyblog: <DailyBlogTabContent/>,
+                searchbased: <SearchBasedTabContent/>,
+            }
         }
     }
 
 
     render() {
-        // let tab_content;
-        // console.log(this.ref_responsive.current.className);
-        // if (this.ref_responsive.current.className === "tab-button active") tab_content = <Responsive />;
-
         return (
 
             <div className="TabMenu">
@@ -42,16 +40,16 @@ class TabMenu extends React.Component {
                 {/* replace tab content with appropriate component; export*/}
                 <div className="TabMenu-content">
                     <Route exact path="/">
-                        {this.state.responsive}
+                        {this.state.tabs.responsive}
                     </Route>
                     <Route path="/ecommerce">
-                        {this.state.ecommerce}
+                        {this.state.tabs.ecommerce}
                     </Route>
                     <Route path="/daily_blog">
-                        {this.state.dailyblog}
+                        {this.state.tabs.dailyblog}
                     </Route>
                     <Route path="/search_based">
-                        {this.state.searchbased}
+                        {this.state.tabs.searchbased}
                     </Route>
                 </div>
             </div>

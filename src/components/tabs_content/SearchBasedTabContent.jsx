@@ -9,7 +9,7 @@ function SearchBasedTabContent(props) {
         <div className="Tab-content-item">
             <img className="Tab-content-item-logo" src={search_based} alt=""/>
             <div className="Tab-content-item-title">
-                Some cool title for tab <b>1</b>
+                Some cool title for tab <b>4</b>
             </div>
             <div className="Tab-content-item-text">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.

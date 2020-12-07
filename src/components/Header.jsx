@@ -14,11 +14,10 @@ function Header() {
         <div className="Header">
             <Navbar/>
             <ReactSlider>
-                {/*<ReactSliderItem>{slider_img_1}</ReactSliderItem>*/}
                 <ReactSliderItem img={slider_img_1} title="Introducing" description="Something hot" btnTitle="Try demo"/>
                 <ReactSliderItem img={slider_img_2} title="Some interesting title" description="Something new" btnTitle="Try this demo"/>
-                <ReactSliderItem>{slider_img_3}</ReactSliderItem>
-                <ReactSliderItem>{slider_img_4}</ReactSliderItem>
+                <ReactSliderItem img={slider_img_3} title="And another one title" description="One more title, read it!" />
+                <ReactSliderItem img={slider_img_4} title="One more title you need to read" desctiption="Read this too!"/>
             </ReactSlider>
         </div>
 

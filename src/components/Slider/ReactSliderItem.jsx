@@ -3,23 +3,15 @@ import './ReactSliderItem.scss';
 
 
 function ReactSliderItem(props) {
-    let btnTitle = props.btnTitle;
-    let img = props.img;
-    let title = props.title;
-    let description = props.description;
     return (
         <div className="React-slider-item-wrapper">
             {/*<img className="React-slider-item-content" src={props.children}/>*/}
             <div className="React-slider-item-leftbar">
-                {
-                    props.img
-                        ? (<img className="React-slider-item-leftbar-img" src={props.img} alt=""/>)
-                        : null
-                }
+                { props.img ? (<img className="React-slider-item-leftbar-img" src={props.img} alt=""/>) : null }
             </div>
             <div className="React-slider-item-rightbar">
                 <div className="React-slider-item-rightbar-title">
-                    {props.title}
+                    {props.title ? props.title : null}
                 </div>
                 <div className="React-slider-item-rightbar-description">{props.description}</div>
                 <div>
